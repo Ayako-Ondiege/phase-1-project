@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us & Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header with navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <div class = "main">
+        <div class="content">
+            <section id="about">
+                <div class="container-about">
+                    <h2>About Us</h2>
+                    <p>                  
+                        ConcCalc is a 1st version construction calculator web application that seeks to eliminate manual calculations that often lead to errors, rework, and significant time wastage. These issues can escalate project costs and extend timelines, ultimately affecting overall productivity.i.
+                        This is a a user-friendly construction cost estimator that helps users estimate the costs, materials, and time required for various construction buidings. This tool will minimize human error, streamline workflows, and enhances productivity. By integrating a construction calculator, professionals can improve accuracy, reduce costs, and meet tight deadlines, ultimately leading to higher project success rates and customer satisfaction.
+                    </p>
+                </div>
+            </section>
+            <!-- Contact Us Section -->
+            <section id="contact">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <form id="contact-form">
+                        <div class="form-about">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-about">
+                            <label fsor="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-about">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                        <div id="response" class="response"></div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <!-- <div class="image-abt">
+            <img src="images/mansion-luxury.jpg" alt="luxury mansion" >
+        </div> -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            
+            <p>&copy; 2024 Construction Cost Estimator. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="aboutUs.js"></script>
+</body>
+</html>

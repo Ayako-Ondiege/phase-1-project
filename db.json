@@ -1,0 +1,44 @@
+{
+  "buildings": {
+    "standard": [
+      {
+        "id": 1,
+        "type": "mansionette",
+        "description": "A single-story house ideal for small families.",
+        "image": "./images/image1.jpg"
+      },
+      {
+        "id": 2,
+        "type": "mansion",
+        "description": "A smaller mansion often used as a starter home.",
+        "image": "./images/image3.jpg"
+      },
+      {
+        "id": 3,
+        "type": "apartment",
+        "description": "Multi-family units that provide budget-friendly living.",
+        "image": "./images/image5.jpg"
+      }
+    ],
+    "luxurious": [
+      {
+        "id": 1,
+        "type": "mansionette",
+        "description": "A large, impressive house often featuring high-end amenities.",
+        "image": "./images/image2.jpg"
+      },
+      {
+        "id": 2,
+        "type": "mansion",
+        "description": "High-end apartments with premium features and locations.",
+        "image": "./images/image4.jpg"
+      },
+      {
+        "id": 3,
+        "type": "apartment",
+        "description": "A spacious single-story home with upscale finishes.",
+        "image": "./images/image6.jpg"
+      }
+    ]
+  }
+}
