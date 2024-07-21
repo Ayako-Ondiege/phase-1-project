@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 let defaultImageUrl = '';
 
 // Fetch building data on page load
-fetch('http://localhost:3000/buildings')
+fetch(`/api/fetchData`)
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -11,8 +11,9 @@ fetch('http://localhost:3000/buildings')
         return response.json();
     })
     .then(data => {
+        console.log(data)
         // Get the last image from the 'luxurious' category
-        const luxuriousBuildings = data.luxurious;
+        const luxuriousBuildings = data.buildings.luxurious;
         const lastBuilding = luxuriousBuildings[luxuriousBuildings.length - 1];
         defaultImageUrl = lastBuilding.image;
         console.log(defaultImageUrl)
@@ -84,7 +85,7 @@ fetch('http://localhost:3000/buildings')
       }, 1000);
 
       // Fetch and display the building details based on user input
-      fetch(`http://localhost:3000/buildings`)
+      fetch(`/api/fetchData`)
           .then(response => {
               if (!response.ok) {
                   throw new Error('Network response was not ok');
@@ -93,7 +94,7 @@ fetch('http://localhost:3000/buildings')
           })
           .then(data => {
             console.log(data)
-              const buildingData = data[buildingCategory];
+              const buildingData = data.buildings[buildingCategory];
               const building = buildingData.find(b => b.type === buildingType);
               console.log(building)
               displayBuilding(building);
